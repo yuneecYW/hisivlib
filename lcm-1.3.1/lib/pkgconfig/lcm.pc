@@ -1,4 +1,4 @@
-prefix=/home/yf/linux/lcm-1.3.1
+prefix=/home/yf/linux/glib/lcm-1.3.1
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

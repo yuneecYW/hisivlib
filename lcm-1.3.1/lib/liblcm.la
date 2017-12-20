@@ -14,10 +14,10 @@ library_names='liblcm.so.1.3.4 liblcm.so.1 liblcm.so'
 old_library=''
 
 # Linker flags that can not go in dependency_libs.
-inherited_linker_flags=' -pthread'
+inherited_linker_flags=' -pthread -fopenmp'
 
 # Libraries that this one depends upon.
-dependency_libs=' -lgthread-2.0 -lglib-2.0'
+dependency_libs=' -L/home/yf/linux/glib/glib-test/lib -L/opt/hisi-linux/x86-arm/arm-hisiv500-linux/lib -L/home/yf/linux/glib/glib-2.22/lib /home/yf/linux/glib/glib-2.22/lib/libgthread-2.0.la -lpthread /home/yf/linux/glib/glib-2.22/lib/libglib-2.0.la /home/yf/linux/glib/glib-2.22/lib/libglib-2.0.la /home/yf/linux/glib/gettext-0.19.7/lib/libgettextpo.la /home/yf/linux/glib/gettext-0.19.7/lib/libgettextsrc.la /home/yf/linux/glib/gettext-0.19.7/lib/libgettextpo.la /home/yf/linux/glib/gettext-0.19.7/lib/libgettextsrc.la /home/yf/linux/glib/gettext-0.19.7/lib/libgettextlib.la /home/yf/linux/glib/gettext-0.19.7/lib/libgettextlib.la /home/yf/linux/glib/gettext-0.19.7/lib/libintl.la -lm /home/yf/linux/glib/gettext-0.19.7/lib/libintl.la -lc'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/usr/local/lib'
+libdir='/home/yf/linux/glib/lcm-1.3.1/lib'
